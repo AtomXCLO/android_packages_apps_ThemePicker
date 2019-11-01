@@ -142,4 +142,14 @@ android_app {
     additional_manifests: [":WallpaperPicker2_Manifest"],
     overrides: ["WallpaperCropper", "WallpaperPicker", "WallpaperPicker2"],
     static_libs: ["ThemePickerApplicationLib"],
+
+    required: ["privapp_whitelist_com.android.wallpaper.xml"],
+}
+
+prebuilt_etc_xml {
+    name: "privapp_whitelist_com.android.wallpaper.xml",
+    src: "privapp_whitelist_com.android.wallpaper.xml",
+    system_ext_specific: true,
+    filename_from_src: true,
+    sub_dir: "permissions",
 }
