@@ -73,6 +73,7 @@ android_app {
         "SettingsLibSettingsTheme",
         "SystemUI-statsd",
         "styleprotoslite",
+        "monet",
     ],
 
     srcs: [
